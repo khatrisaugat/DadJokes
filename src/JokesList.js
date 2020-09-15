@@ -14,7 +14,7 @@ class JokesList extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { jokes: JSON.parse(window.localStorage.getItem("jokes") || []) };
+        this.state = { jokes: JSON.parse(window.localStorage.getItem("jokes") || "[]") };
         // this.handleVote = this.handleVote.bind(this);
     }
     componentDidMount() {
