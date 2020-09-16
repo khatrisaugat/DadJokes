@@ -14,14 +14,9 @@ class JokesList extends Component {
 
     constructor(props) {
         super(props);
-<<<<<<< HEAD
         this.state = { jokes: JSON.parse(window.localStorage.getItem("jokes") || "[]"), isLoading: false };
         this.seenJokes = new Set(this.state.jokes.map(j => j.text));
         this.handleClick = this.handleClick.bind(this);
-=======
-        this.state = { jokes: JSON.parse(window.localStorage.getItem("jokes") || "[]") };
-        // this.handleVote = this.handleVote.bind(this);
->>>>>>> 466cfb76a8593c253a087639b27fb5452db9be3b
     }
     componentDidMount() {
         if (this.state.jokes.length === 0) {
